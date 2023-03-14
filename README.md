@@ -16,4 +16,9 @@ echo "{\"key\": 1234}" | fluent-cat test
 ```bash
 logger -d -n 127.0.0.1 --port 5140 "hello"
 ```
+### logrotate
+```
+logrotate -f  ./logrotate.conf
+echo -e "message 1\nmessage 2" >> logs/file1.log
 
+```
